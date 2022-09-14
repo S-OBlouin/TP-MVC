@@ -11,6 +11,7 @@
     <ul class="navigation">
       <li><a href="/letpmvc/TP-MVC/">Accueil</a></li>
       <li><a href="?module=user&action=create">Nouvelle Utilisateur</a></li>
+      <li><a href="?module=user&action=login">Login</a></li>
       <li><a href="?module=user&action=index">Nouvelle Article</a></li>
     </ul>
     <div class="container">

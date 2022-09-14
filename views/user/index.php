@@ -11,8 +11,7 @@
   </form>
   <div class="container">
     <h3>Article à la une</h3>
-    <?php print_r($data);
-     foreach($data as $row) { ?>
+    <?php foreach($data as $row) { ?>
       <h4><?php echo $row['titre'] ?></h4>
       <p><?php echo $row['article'] ?></p>
     <?php } ?>

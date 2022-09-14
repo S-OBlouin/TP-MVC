@@ -9,7 +9,7 @@
 </head>
 <body>
     <ul class="navigation">
-      <li><a href="/letpmvc/">Accueil</a></li>
+      <li><a href="/letpmvc/TP-MVC/">Accueil</a></li>
       <li><a href="?module=user&action=create">Nouvelle Utilisateur</a></li>
       <li><a href="?module=user&action=index">Nouvelle Article</a></li>
     </ul>

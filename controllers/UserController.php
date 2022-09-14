@@ -53,12 +53,12 @@ function user_controller_logincheck($request){
             $_SESSION['nom'] = $user['nom'];
             $_SESSION['fingerPrint'] = md5($_SERVER['HTTP_USER_AGENT'].$_SERVER[
             'REMOTE_ADDR']);
-            header("Location: ?module=user&action=login");
+            header("Location: ?module=user&action=index");
         }else{
-            header("Location: login.php?msg=2");
+            header("Location: ?module=user&action=login");
         }
     }else{
-        header("Location: login.php?msg=1");
+        header("Location: ?module=user&action=login");
     }
 }
 ?>

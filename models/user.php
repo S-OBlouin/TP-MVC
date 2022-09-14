@@ -50,4 +50,16 @@ function user_model_delete($request){
     mysqli_close($con);
 }
 
+function user_model_login($request){
+    session_start();
+    require(CONNEX_DIR);
+    foreach ($_POST as $key => $value) {
+        $$key = mysqli_real_escape_string($con, $value);
+    }
+
+    $sql = "SELECT * FROM utilisateur WHERE nom_utilisateur = '$nom_utilisateur'";
+    $result = mysqli_query($con, $sql);
+    mysqli_close($con);
+    return($request);
+}
 ?>

@@ -11,9 +11,9 @@ if(isset($_GET['msg'])){
 
 <h2>Login</h2>
 <span><?php echo $msg_error ; ?></span>
-<form action="authentication.php" method="post">
+<form action="?module=user&action=logincheck" method="post">
     <label> Username
-        <input type="email" name="username">
+        <input type="email" name="nom_utilisateur">
     </label>
     <label> Password
         <input type="password" name="password">

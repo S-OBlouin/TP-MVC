@@ -11,9 +11,9 @@
   </form>
   <div class="container">
     <h3>Article à la une</h3>
-    <?php foreach($data as $row) { ?>
-      <h4><?php echo $row['titre'] ?></h4>
-      <p><?php echo $row['article'] ?></p>
+    <?php foreach($test as $ligne) { ?>
+      <h4><?php echo $ligne['titre'] ?></h4>
+      <p><?php echo $ligne['article'] ?></p>
     <?php } ?>
   </div>
 </div>
